@@ -1,0 +1,408 @@
+    1  exit
+    2  ls
+    3  cd semana1/
+    4  ls
+    5  cat readme.first 
+    6  g++ hello-world.c -o hello-world
+    7  ls
+    8  cat hello-world
+    9  PuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTY
+   10  ./ hello-world
+   11  ./hello-world 
+   12  ls -F
+   13  cd Mail/
+   14  ls
+   15  ..
+   16  cd ../
+   17  cd/bin/
+   18  cd /bin/
+   19  ls
+   20  ls -l
+   21  ls -lt
+   22  ls -lt | head
+   23  man sleep
+   24  date ; sleep 2 ; date
+   25  cd ..
+   26  wget https://raw.githubusercontent.com/prog4biol/pfb2019/master/files/cuffdiff.txt
+   27  curl -O https://raw.githubusercontent.com/prog4biol/pfb2019/master/files/cuffdiff.txt
+   28  cd ~
+   29  curl -O https://raw.githubusercontent.com/prog4biol/pfb2019/master/files/cuffdiff.txt
+   30  grep Chr7 cuffdiff.txt > cromossomo7_cuffdiff.txt
+   31  head cromossomo7_cuffdiff.txt 
+   32  ls
+   33  cd semana1/
+   34  ls
+   35  cd ..
+   36  ls
+   37  cat INBOX 
+   38  ls
+   39  pwd 
+   40  ls 
+   41  mkdir problemsets
+   42  ls
+   43  cd problemsets/
+   44  pwd
+   45  wget wget
+   46  wget
+   47  wget https://raw.githubusercontent.com/prog4biol/pfb2019/master/files/sequences.nt.fa
+   48  ls
+   49  wc sequences.nt.fa 
+   50  ls
+   51  cd problemsets/
+   52  pws
+   53  cd ..
+   54  pwd
+   55  cd semana1/
+   56  ls
+   57  cd ..
+   58  ls
+   59  cd problemsets/
+   60  pwd
+   61  ls
+   62  man wc
+   63  man count
+   64  man wc
+   65  wc sequences.nt.fa 
+   66  wc -c sequences.nt.fa 
+   67  man wc
+   68  wc -m seq
+   69  wc -m sequences.nt.fa 
+   70  man wc
+   71  wc -l sequences.nt.fa 
+   72  wc -c sequences.nt.fa 
+   73  man head
+   74  man wc
+   75  man head
+   76  head -n 1 sequences.nt.fa 
+   77  head sequences.nt.fa 
+   78  head -n 2 sequences.nt.fa 
+   79  man tail
+   80  tail -c 3 sequences.nt.fa 
+   81  tail sequences.nt.fa 
+   82  tail -n 3 sequences.nt.fa 
+   83  head sequences.nt.fa 
+   84  man grep
+   85  grep -l >* sequences.nt.fa 
+   86  grep >* sequences.nt.fa 
+   87  cd problemsets/
+   88  ls
+   89  grep '>' sequences.nt.fa 
+   90  head sequences.nt.fa 
+   91  exit
+   92  cd problemsets/
+   93  ls
+   94  head sequences.nt.fa
+   95  cd ..
+   96  cd semana1/
+   97  ls
+   98  cat readme.first 
+   99  cd..
+  100  cd ..
+  101  cd pr
+  102  cd problemsets/
+  103  ls
+  104  pwd
+  105  head -n 1 sequences.nt.fa 
+  106  cd sequences.nt.fa 
+  107  cat sequences.nt.fa 
+  108  wget  https://raw.githubusercontent.com/prog4biol/pfb2019/master/files/sequences.nt.fa
+  109  ls
+  110  head sequences.nt.fa.1
+  111  head sequences.nt.fa
+  112  grep -w ">" sequences.nt.fa.1
+  113  head sequences.nt.fa.1
+  114  head sequences.nt.fa
+  115  head sequences.nt.fa.1
+  116  grep -c '>*' sequences.nt.fa.1
+  117  man mv
+  118  mv -T sequences.nt.fa.1 cancer_genes.fasta
+  119  ls
+  120  head cancer_genes.fasta 
+  121  ls
+  122  wget https://raw.githubusercontent.com/prog4biol/pfb2019/master/files/cuffdiff.txt
+  123  ls
+  124  head cuffdiff.txt 
+  125  head -n 2 cuffdiff.txt 
+  126  head -n 1 cuffdiff.txt 
+  127  ls
+  128  man sort
+  129  sort cuffdiff.txt[ ,10]
+  130  exit
+  131  cd problemsets/
+  132  ls
+  133  sort cuffdiff.txt$10
+  134  exit
+  135  ls
+  136  cd problemsets/
+  137  ls
+  138  head cuffdiff.txt 
+  139  sort {$10} cuffdiff.txt 
+  140  sort cuffdiff.txt$10
+  141  man sort
+  142  sort -d cuffdiff.txt 
+  143  head cuffdiff.txt 
+  144  sort -k 10 cuffdiff.txt 
+  145  head cuffdiff.txt 
+  146  sort -k 10 -r cuffdiff.txt 
+  147  sort -k 10 -r cuffdiff.txt > sorted.cuffdiff.out
+  148  ls
+  149  head sorted.cuffdiff.out 
+  150  print$10 sorted.cuffdiff.out 
+  151  sort -k 10 -n -r cuffdiff.txt 
+  152  head sorted.cuffdiff.out.2
+  153  man print
+  154  print head -n 100 sorted.cuffdiff.out.2
+  155  head -n 100 sorted.cuffdiff.out.2
+  156  head -n 100 sorted.cuffdiff.out.2 > top100.sorted.cuffdiff.out
+  157  ls
+  158  head top100.sorted.cuffdiff.out 
+  159  awk '{print $1}' top100.sorted.cuffdiff.out 
+  160  awk '{print $1}' top100.sorted.cuffdiff.out > differentially.expressed.genes.txt
+  161  ls
+  162  head differentially.expressed.genes.txt 
+  163  sort -unique differentially.expressed.genes.txt 
+  164  sort -c -u differentially.expressed.genes.txt 
+  165  sort -u differentially.expressed.genes.txt 
+  166  sort -u differentially.expressed.genes.txt | wc -l differentially.expressed.genes.txt 
+  167  wc -l differentially.expressed.genes.txt 
+  168  sort -u differentially.expressed.genes.txt > differentially.expressed.genes.2.txt
+  169  wc differentially.expressed.genes.2.txt 
+  170  cd ..
+  171  ls
+  172  cd problemsets/
+  173  ls
+  174  rm sequences.nt.fa 
+  175  ls
+  176  rm sorted.cuffdiff.out
+  177  ls
+  178  exit
+  179  cd problemsets/
+  180  ls
+  181  grep -c '>'  cancer_genes.fasta 
+  182  head cancer_genes.fasta 
+  183  ls
+  184  head cuffdiff.txt 
+  185  sort -k 10 -r -n cuffdiff.txt > teste_sorted.out
+  186  head teste_sorted.out 
+  187  head -n 100 teste_sorted.out > teste_top100
+  188  sort -k 10 -r -n cuffdiff.txt | head -n 100 > teste_top100.2
+  189  head teste_top100.2
+  190  wc -l teste_top100.2
+  191  sort -k 10 -r -n cuffdiff.txt | head -n 100 | cut -f 1 
+  192  sort -k 10 -r -n cuffdiff.txt | head -n 100 | cut -f 1 > teste_dif_exp
+  193  head teste_dif_exp 
+  194  sort -k 10 -r -n cuffdiff.txt | head -n 100 | awk '{print $1}' > teste_dif_exp.2
+  195  head teste_dif_exp.2
+  196  wc -l teste_dif_exp.2
+  197  diff teste_dif_exp teste_dif_exp.2
+  198  sort -k 10 -r -n cuffdiff.txt | head -n 101 | cut -f 1 > teste_dif_exp
+  199  diff teste_dif_exp teste_dif_exp.2
+  200  history
+  201  diff teste_dif_exp teste_dif_exp.2
+  202  cd .. 
+  203  exit
+  204  ls
+  205  cd problemsets/
+  206  ls
+  207  cd ..
+  208  vi first_vi_file.txt
+  209  ls
+  210  exit
+  211  man git
+  212  git init
+  213  ls
+  214  mkir git_teste
+  215  mkdir git_teste
+  216  ls
+  217  cd gi
+  218  cd git_teste/
+  219  echo "# problem_sets" >> README.md
+  220  git init
+  221  git add README.md
+  222  git commit -m "primeiro commit"
+  223  git config --global amandadumit
+  224  git config --global user.name "amandadumit"
+  225  git commit -m "primeiro commit"
+  226  git config --global amandadumit@gmail.com
+  227  git config --global user.email amandadumit@gmail.com
+  228  git commit -m "primeiro commit"
+  229  git commit -m "first commit"
+  230  git branch -M master
+  231  git remote add origin https://github.com/amandadumit/problem_sets.git
+  232  git push -u origin master
+  233  ls
+  234  echo "# git_amanda" >> README.md
+  235  git init
+  236  git add README.md
+  237  git commit -m "fazendo primeiro commit"
+  238  git branch -M master
+  239  git remote add origin https://github.com/amandadumit/git_amanda.git
+  240  git push -u origin master
+  241  git status
+  242  git branch -M new
+  243  git exit
+  244  git --help
+  245  ls
+  246  cat README.md 
+  247  exit
+  248  ls
+  249  cd git_teste/
+  250  ls
+  251  cat README.md 
+  252  git remote add origin https://github.com/amandadumit/git_amanda.git
+  253  cd ..
+  254  mkdir git_teste2
+  255  cd git_teste2
+  256  echo "# teste" >> README.md
+  257  git init
+  258  git add README.md 
+  259  git commit -m "primeiro commit teste"
+  260  git branch -M master
+  261  git remote add origin https://github.com/amandadumit/github_teste.git
+  262  git push -u origin master
+  263  ls
+  264  cd ..
+  265  ls
+  266  cd git_teste
+  267  git status
+  268  ls
+  269  cat README.md 
+  270  git pull
+  271  ls
+  272  cat README.md 
+  273  git status
+  274  cd ..
+  275  cd git_teste2
+  276  ls
+  277  cat README.md 
+  278  cd ..
+  279  mkdir git_amanda
+  280  cd git_amanda
+  281  ls
+  282  echo "# git_amanda" >> README.md
+  283  git init
+  284  git add README.md 
+  285  git commit -m "primeiro commit feito"
+  286  git branch -M master
+  287  git remote add origin https://github.com/amandadumit/git_amanda.git
+  288  git push -u origin master
+  289  ls
+  290  cat README.md 
+  291  vi git_exercises.txt
+  292  cat git_exercises.txt 
+  293  git add git_exercises.txt 
+  294  git commit -m "adicionei uma linha no arquivo vi"
+  295  git push origin master
+  296  ls
+  297  git status
+  298  git clone https://github.com/prog4biol/pfb2019.git
+  299  ls
+  300  cd pfb2019/
+  301  ls
+  302  cd files
+  303  ls
+  304  cd ..
+  305  cd lect
+  306  cd lectures/
+  307  ls
+  308  cd ..
+  309  ls
+  310  cd problemsets/
+  311  ls
+  312  vi first_vi_file.txt
+  313  cat first_vi_file.txt 
+  314  cd ..
+  315  man mv
+  316  mv problemsets/ git_amanda/
+  317  ls
+  318  git_amanda/
+  319  cd git_amanda/
+  320  ls
+  321  cd problemsets/
+  322  ls
+  323  cd ..
+  324  ls
+  325  mv cromossomo7_cuffdiff.txt git_amanda/
+  326  mv cuffdiff.txt git_amanda/
+  327  cd git_amanda/
+  328  ls
+  329  mv cuffdiff.txt problemsets/
+  330  mv cromossomo7_cuffdiff.txt problemsets/
+  331  ls
+  332  cd ..
+  333  ls
+  334  cd git_amanda/
+  335  git status
+  336  git add pfb2019/ problemsets/
+  337  git commit -m "adicionando problemsets do Unix 1 e material da disciplina"
+  338  git push
+  339  ls
+  340  cd problemsets/
+  341  mkdir files
+  342  ls
+  343  cd../..
+  344  cd .. 
+  345  cd ..
+  346  ls
+  347  cd git_amanda/problemsets/
+  348  ls
+  349  mv cancer_genes.fasta files
+  350  cd files/
+  351  ls
+  352  cd ..
+  353  cd problemsets/
+  354  git add files/cancer_genes.fasta 
+  355  git commit -m "adicionando cancer_genes.fasta"
+  356  git push
+  357  exit
+  358  ls
+  359  cd git_amanda/problemsets/
+  360  ls
+  361  vi mysequences.txt
+  362  cd mysequences.txt 
+  363  vi mysequences.txt 
+  364  git add mysequences.txt 
+  365  git commit -m "adicionando arquivo mysequences"
+  366  git push
+  367  cd ..
+  368  mkdir fastas
+  369  ls
+  370  man cp 
+  371  cp problemsets/files/cancer_genes.fasta fastas/
+  372  cd fastas
+  373  ls
+  374  cd ..
+  375  cd problemsets/
+  376  cd files/
+  377  rm cancer_genes.fasta 
+  378  cd ..
+  379  git status
+  380  git add fastas/ 
+  381  git commit -m "adicionando diretorio fastas"
+  382  git push
+  383  git status
+  384  vi oops.txt
+  385  git add oops.txt 
+  386  git commit -m "adc oops"
+  387  git push
+  388  git rm oops.txt 
+  389  git commit -m "removendo oops"
+  390  git push
+  391  ls
+  392  git status
+  393  ls
+  394  vi oops2.txt
+  395  ls
+  396  git add oops2.txt 
+  397  git commit -m "adicionando oops2"
+  398  git push
+  399  rm oops2.txt 
+  400  git add oops2.txt
+  401  git status
+  402  cd git_amanda/
+  403  ls
+  404  git status
+  405  git commit -m "removendo arquivos" oops2.txt problemsets/cancer_genes.fasta problemsets/files/cancer_genes.fasta
+  406  git status
+  407  git push
+  408  history > unix_basics.txt
