@@ -1,0 +1,1 @@
+Este é um arquivo de text plano que pode ser visualizado no nano o no vi
