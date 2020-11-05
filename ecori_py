@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+sequencia = 'GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGCGTTCGGGCTGGGAGCGTGCTTTCCACGACGGTGACACGCTTCCCTGGATTGGCAGCCAGACTGCCTTCCGGGTCACTGCCATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATTCGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCTGTCCCTTCCCAGAAAACCTACCAGGGCAGCTACGGTTTCCGTCTGGGCTTCTTGCATTCTGGGACAGCCAAGTCTGTGACTTGCACGTACTCCCCTGCCCTCAACAAGATGTTTTGCCAACTGGCCAAGACCTGCCCTGTGCAGCTGTGGGTTGATTCCACACCCCCGCCCGGCACCCGCGTCCGCGCCATGGCCATCTACAAGCAGTCACAGCACATGACGGAGGTTGTGAGGCGCTGCCCCCACCATGAGCGCTGCTCAGATAGCGATGGTCTGGCCCCTCCTCAGCATCTTATCCGAGTGGAAGGAAATTTGCGTGTGGAGTATTTGGATGACAGAAACACTTTTCG'
+
+sequencia_rev_comp = sequencia.upper().replace('A', 'M') 
+sequencia_rev_comp = sequencia_rev_comp.replace('T', 'N')
+sequencia_rev_comp = sequencia_rev_comp.replace('G', 'O')
+sequencia_rev_comp = sequencia_rev_comp.replace('C', 'P') 
+
+sequencia_rev_comp = sequencia_rev_comp.replace('M', 'T')
+sequencia_rev_comp = sequencia_rev_comp.replace('N', 'A')
+sequencia_rev_comp = sequencia_rev_comp.replace('O', 'C')
+sequencia_rev_comp = sequencia_rev_comp.replace('P', 'G')
+
+sequencia_rev_comp = sequencia_rev_comp[::-1] 
+
+ecoRI = 'GAATTCT'
+
+start_pos_F = sequencia.upper().find(ecoRI) 
+start_pos_R = sequencia_rev_comp.find(ecoRI) 
+
+if start_pos_F > 0:
+	start_pos_F += 1
+	end_pos_F = start_pos_F + len(ecoRI) - 1
+	print("EcoRI na fita positiva  startPos {} endPos {}".format(start_pos_F, end_pos_F))
+elif start_pos_R > 0:
+	start_pos_R += 1
+	end_pos_R = start_pos_R + len(ecoRI) - 1
+	print("Eco RI na fita negativa startPos {} endPos {}".format(start_pos_R, end_pos_R)) 
+else:
+	print("o padrão {} não existe na sequencia".format(ecoRI)) 
+
+
+
+
+
+
+
+
